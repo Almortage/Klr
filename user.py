@@ -8,13 +8,13 @@ async def main():
   await app.start()
   await bot.start()
   try :
-    await app.join_chat("R3_QX")
-    await app.join_chat("RQ_SF")
-    await app.join_chat("R7_QX")
+    await app.join_chat("AlmortagelTech")
+    await app.join_chat("AlmortagelTech")
+    await app.join_chat("AlmortagelTech")
   except :
     pass
   starkbot = await bot.get_me()
-  perf = "[ رويس ]"
+  perf = "[ المرتجل ]"
   bot_name = starkbot.first_name
   botname = f"@{starkbot.username}"
   if bot_name.endswith("Assistant"):
