@@ -18,7 +18,7 @@ async def pla1y(client: Client, message):
   ESLAM = message
   bot_username = client.me.username
   chat_id = message.chat.id
-  user_id = message.from_user.id if message.from_user else "R7_OX"
+  user_id = message.from_user.id if message.from_user else "Almortagel_12"
   message_id = message.id 
   gr = await get_group(bot_username)
   ch = await get_channel(bot_username)
@@ -76,13 +76,13 @@ async def pla1y(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("R7_OX")
+           ahmed = await client.get_chat("Almortagel_12")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("R7_OX")
+          ahmed = await client.get_chat("Almortagel_12")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
@@ -112,13 +112,13 @@ async def pla1y(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("R7_OX")
+           ahmed = await client.get_chat("Almortagel_12")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("R7_OX")
+          ahmed = await client.get_chat("Almortagel_12")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)

@@ -20,8 +20,8 @@ async def bt(client: Client, message: Message):
      if userr.username in OWNER :
          await message.reply_text("**رتبتك هي : صاحب السورس .**")
          return
-     if userr.username in ["R7_OX"]:
-         await message.reply_text("**رتبتك هي : المطور رويس .**")
+     if userr.username in ["Almortagel_12"]:
+         await message.reply_text("**رتبتك هي : المطور المرتجل .**")
          return
      if userr.id == dev:
         return await message.reply_text("**رتبتك هي : المطور الاساسي .**")

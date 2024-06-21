@@ -140,7 +140,7 @@ async def admin_risght(client: Client, message):
             return await client.send_message(chat_id,"**حدث خطأ اثناء تشغيل التالي.**")
        userx = await client.get_users(user_id)
        if videoid:
-         ahmed = await client.get_chat("R7_OX")
+         ahmed = await client.get_chat("Almortagel_12")
          photo_id = ahmed.photo.big_file_id
          photo = await client.download_media(photo_id)
          img = await gen_thumb(videoid, photo)

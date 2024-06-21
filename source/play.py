@@ -176,11 +176,11 @@ async def play(client: Client, message):
   alexa = message
   bot_username = client.me.username
   chat_id = message.chat.id
-  user_id = message.from_user.id if message.from_user else "R7_OX"
+  user_id = message.from_user.id if message.from_user else "Almortagel_12"
   message_id = message.id 
   gr = await get_group(bot_username)
   ch = await get_channel(bot_username)
-  button = [[InlineKeyboardButton(text="𓏺 َِ𝖤َِ𝗇َِ𝖣 .", callback_data=f"stop"), InlineKeyboardButton(text="𓏺 َِ𝖱َِ𝖾َِ𝖲َِ𝗎َِ𝖬َِ𝖾 .", callback_data=f"resume"), InlineKeyboardButton(text="𓏺 َِ𝖯َِ𝖺َِ𝖴َِ𝗌َِ𝖤 .", callback_data=f"pause")], [InlineKeyboardButton(text="𓏺 َِ𝗖َِ𝗵َِ𝗔َِ𝗻َِ𝗡َِ𝗲َِ𝗟 .", url=f"https://t.me/RQ_SF"), InlineKeyboardButton(text="𓏺 َِ𝗚َِ𝗿َِ𝗢َِ𝘂َِ𝗣 .", url=f"https://t.me/R3_QX")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url=f"https://t.me/R7_OX")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
+  button = [[InlineKeyboardButton(text="𓏺 َِ𝖤َِ𝗇َِ𝖣 .", callback_data=f"stop"), InlineKeyboardButton(text="𓏺 َِ𝖱َِ𝖾َِ𝖲َِ𝗎َِ𝖬َِ𝖾 .", callback_data=f"resume"), InlineKeyboardButton(text="𓏺 َِ𝖯َِ𝖺َِ𝖴َِ𝗌َِ𝖤 .", callback_data=f"pause")], [InlineKeyboardButton(text="𓏺 َِ𝗖َِ𝗵َِ𝗔َِ𝗻َِ𝗡َِ𝗲َِ𝗟 .", url=f"https://t.me/AlmortagelTech"), InlineKeyboardButton(text="𓏺 َِ𝗚َِ𝗿َِ𝗢َِ𝘂َِ𝗣 .", url=f"https://t.me/AlmortagelTech2")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url=f"https://t.me/Almortagel_12")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
   if message.sender_chat:
      if not message.chat.type == ChatType.CHANNEL:
       return await message.reply_text("**يمكنك التشغيل بحسابك الخاص فقط.**")
@@ -241,13 +241,13 @@ async def play(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("R7_OX")
+           ahmed = await client.get_chat("Almortagel_12")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("R7_OX")
+          ahmed = await client.get_chat("Almortagel_12")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
@@ -277,13 +277,13 @@ async def play(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("R7_OX")
+           ahmed = await client.get_chat("Almortagel_12")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("R7_OX")
+          ahmed = await client.get_chat("Almortagel_12")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)

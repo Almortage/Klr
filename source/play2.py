@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+*from pyrogram import Client, filters
 import os
 import random 
 import asyncio
@@ -45,7 +45,7 @@ async def aii(client: Client, message):
     photo = PHOTO
     vid = True if x.video else None
     chat_id = message.chat.id
-    user_id = message.from_user.id if message.from_user else "R7_OX"
+    user_id = message.from_user.id if message.from_user else "Almortagel_12"
     videoid = None
     link = None
     await add(message.chat.id, bot_username, file_path, link, title, duration, videoid, vid, user_id)

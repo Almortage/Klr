@@ -86,7 +86,7 @@ async def bottttt(client: Client, message: Message):
     
 @Client.on_message(filters.command("تعين لوجو السورس", ""))
 async def set_vi_so(client: Client, message):
-   NAME = await client.ask(message.chat.id,"**ارسل رابط لوجو السورس .\nمثال ⟨ https://telegra.ph/file/fa5a2ef2f3d5b516a7499.mp4 ⟩ .**", filters=filters.text, timeout=30)
+   NAME = await client.ask(message.chat.id,"**ارسل رابط لوجو السورس .\nمثال ⟨ https://telegra.ph/file/14c7948ad180050fe16e4.jpg ⟩ .**", filters=filters.text, timeout=30)
    VID_SO = NAME.text
    bot_username = client.me.username
    await set_video_source(bot_username, VID_SO)
