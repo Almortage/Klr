@@ -45,7 +45,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-ahmed = "https://graph.org/file/ade261f5d3f04d0bffa04.jpg
+ahmed = "https://graph.org/file/ade261f5d3f04d0bffa04.jpg"
 
 async def gen_thumb(videoid, photo):
     if os.path.isfile(f"{photo}.png"):
