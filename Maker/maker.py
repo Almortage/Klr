@@ -72,15 +72,15 @@ async def auto_bot():
         except:
            pass
         try:
-          await user.join_chat("RQ_SF")
+          await user.join_chat("AlmortagelTech2")
         except:
           pass
         try:
-          await user.join_chat("R3_QX")
+          await user.join_chat("AlmortagelTech")
         except:
           pass
         try:
-          await user.join_chat("R7_QX")
+          await user.join_chat("AlmortagelTech")
         except:
           pass
       except Exception as e:
@@ -213,18 +213,18 @@ async def stratmaked(client, message):
     kep = ReplyKeyboardMarkup([
 ["حذف بوت", "صنع بوت"],
 ["حول السورس", "استخراج جلسه"]],resize_keyboard=True)
-    await message.reply_text(f"**👋🏻 ꒐ أهلاً بك {message.from_user.mention} .\n🤖 ꒐ في صانع ميوزك اتاك .**", reply_markup=kep,quote=True)
+    await message.reply_text(f"**👋🏻 ꒐ أهلاً بك {message.from_user.mention} .\n🤖 ꒐ في صانع ميوزك المرتجل .**", reply_markup=kep,quote=True)
     
 @app.on_message(filters.command(["حول السورس"], ""))
 async def source(c: Client, m):
   mostafa ="""
 ╭──── • ◈ • ────╮
-么 [ Source ](t.me/R7_QX).
-么  [ 𝗥͜𝗼͡𝗪͡𝗲͜𝗦 .](t.me/R7_OX).
+么 [ Source ](t.me/AlmortagelTech).
+么  [ DEV ELMORTAGEL .](t.me/Almortagel_12).
 ╰──── • ◈ • ────╯
 🚦 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 .
 """
-  await m.reply_video("https://t.me/CR_HELP/7",caption=mostafa,quote=True)
+  await m.reply_photo("https://telegra.ph/file/14c7948ad180050fe16e4.jpg",caption=mostafa,quote=True)
 
 @app.on_message(filters.command("تحديث الصانع", ""))
 async def update(client, message):
