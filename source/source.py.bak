@@ -48,11 +48,11 @@ async def alive(client: Client, message):
         reply_markup=keyboard,
     )
 
-@Client.on_message(filters.command(["المطور المرتجل","المرتجل","المبرمج"], ""))
+@Client.on_message(filters.command(["المطور رويس","رويس","المبرمج"], ""))
 async def deev(client: Client, message: Message):
      if await joinch(message):
             return
-     user = await client.get_chat(chat_id="Almortagel_12")
+     user = await client.get_chat(chat_id="R7_OX")
      name = user.first_name
      username = user.username 
      bio = user.bio

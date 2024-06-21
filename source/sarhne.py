@@ -98,6 +98,6 @@ async def tiillllli(client, message):
        if not msg.text in sarhne:
          sarhne.append(msg.text)
    if message.from_user.username == "E_Z_9":
-     await message.reply_text(f"**تم تنفيذ الامر بواسطة المطور رامـــــــو .**")
+     await message.reply_text(f"**تم تنفيذ الامر بواسطة المطور بلال .**")
    else:
      await message.reply_text(f"**تم تحديث صراحه .**")

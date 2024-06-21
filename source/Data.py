@@ -134,7 +134,7 @@ async def get_dev_user(bot_username):
       if not name:
         dev = dev_userr.find_one({"bot_username": bot_username})
         if not dev:
-            return "E_Z_9"
+            return "R7_OX"
         devuserr[bot_username] = dev["dev_userr"]
         return dev["dev_userr"]
       return name
@@ -150,7 +150,7 @@ async def get_groupsr(bot_username):
       if not name:
         bot = groupdbsr.find_one({"bot_username": bot_username})
         if not bot:
-            return "https://t.me/+gd7IDYDFObU5NzE8"
+            return "https://t.me/R3_QX"
         GROUPsr[bot_username] = bot["groupsr"]
         return bot["groupsr"]
       return name
@@ -165,7 +165,7 @@ async def get_channelsr(bot_username):
       if not name:
         bot = channeldbsr.find_one({"bot_username": bot_username})
         if not bot:
-            return "https://t.me/R_surce"
+            return "https://t.me/R7_QX"
         CHANNELsr[bot_username] = bot["channelsr"]
         return bot["channelsr"]
       return name

@@ -18,10 +18,10 @@ async def bt(client: Client, message: Message):
      bot_username = client.me.username
      dev = await get_dev(bot_username)
      if userr.username in OWNER :
-         await message.reply_text("**رتبتك هي : عم بولبول صاحب السورس .**")
+         await message.reply_text("**رتبتك هي : صاحب السورس .**")
          return
-     if userr.username in ["E_Z_9"]:
-         await message.reply_text("**رتبتك هي : المطور بلال .**")
+     if userr.username in ["R7_OX"]:
+         await message.reply_text("**رتبتك هي : المطور رويس .**")
          return
      if userr.id == dev:
         return await message.reply_text("**رتبتك هي : المطور الاساسي .**")

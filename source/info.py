@@ -45,7 +45,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-ahmed = "https://graph.org/file/ade261f5d3f04d0bffa04.jpg"
+ahmed = "https://telegra.ph/file/d5e41923cc38437bc3735.jpg"
 
 async def gen_thumb(videoid, photo):
     if os.path.isfile(f"{photo}.png"):
@@ -112,7 +112,7 @@ async def gen_thumb(videoid, photo):
         j = 0
         draw.text(
             (600, 150),
-            "Almortagel PLAYING",
+            "START PLAYING",
             fill="white",
             stroke_width=2,
             stroke_fill="white",
@@ -483,7 +483,7 @@ async def joinch(message):
         if ii == "معطل":
           return
         cch = await get_channel(message._client.me.username)
-        ch = cch.replace("https://t.me/", "R_surce")
+        ch = cch.replace("https://t.me/", "RQ_SF")
         try:
             await message._client.get_chat_member(ch, message.from_user.id)
         except UserNotParticipant:

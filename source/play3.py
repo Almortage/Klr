@@ -18,7 +18,7 @@ async def pla1y(client: Client, message):
   ESLAM = message
   bot_username = client.me.username
   chat_id = message.chat.id
-  user_id = message.from_user.id if message.from_user else "E_Z_9"
+  user_id = message.from_user.id if message.from_user else "R7_OX"
   message_id = message.id 
   gr = await get_group(bot_username)
   ch = await get_channel(bot_username)
@@ -76,13 +76,13 @@ async def pla1y(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("E_Z_9")
+           ahmed = await client.get_chat("R7_OX")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("E_Z_9")
+          ahmed = await client.get_chat("R7_OX")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
@@ -112,13 +112,13 @@ async def pla1y(client: Client, message):
            photo_id = message.chat.photo.big_file_id
            photo = await client.download_media(photo_id)
           else:
-           ahmed = await client.get_chat("E_Z_9")
+           ahmed = await client.get_chat("R7_OX")
            ahmedphoto = ahmed.photo.big_file_id
          elif message.chat.photo:
           photo_id = message.chat.photo.big_file_id
           photo = await client.download_media(photo_id)
          else:
-          ahmed = await client.get_chat("E_Z_9")
+          ahmed = await client.get_chat("R7_OX")
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
@@ -143,7 +143,7 @@ async def pla1y(client: Client, message):
        if not message.reply_to_message.media:
          return
        rep = await message.reply_text("جاري تشغيل الملف انتظر قليلا 🚦 .") 
-       photo = "Uploaded to https://graph.org/file/09eaf36d729b2a5aae6ca.jpg"
+       photo = "Uploaded to https://telegra.ph/file/562324befcafe035436dc.jpg"
        if message.reply_to_message.video or message.reply_to_message.document:
            vid = True
        else:
