@@ -112,11 +112,11 @@ async def gen_thumb(videoid, photo):
         j = 0
         draw.text(
             (600, 150),
-            "ELMORTAGEL PlAYiNg",
+            "Elmortagel PlAYiNg",
             fill="white",
             stroke_width=2,
             stroke_fill="white",
-            font=font2,
+            font=font,
         )
         for line in para:
             if j == 1:
