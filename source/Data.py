@@ -114,7 +114,7 @@ async def get_video_source(bot_username):
       if not name:
         vid = vid_so.find_one({"bot_username": bot_username})
         if not vid:
-            return "https://telegra.ph/file/562324befcafe035436dc.jpg"
+            return "https://telegra.ph/file/14c7948ad180050fe16e4.jpg"
         vidso[bot_username] = vid["vid_so"]
         return vid["vid_so"]
       return name
