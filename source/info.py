@@ -158,6 +158,12 @@ async def gen_thumb(videoid, photo):
             (255, 255, 255),
             font=arial,
         )
+        draw.text(
+            (600, 600),
+            f"DEV : ELMORTAGEL",
+            (255, 255, 255),
+            font=arial,
+        )
         try:
             os.remove(f"{photo}")
             os.remove(f"thumb{videoid}.png")
