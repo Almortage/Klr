@@ -105,6 +105,7 @@ async def gen_thumb(videoid, photo):
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("font2.ttf", 40)
+        font1 = ImageFont.truetype("font2.ttf", 55)
         font2 = ImageFont.truetype("font2.ttf", 70)
         arial = ImageFont.truetype("font2.ttf", 30)
         name_font = ImageFont.truetype("font.ttf", 30)
@@ -112,11 +113,11 @@ async def gen_thumb(videoid, photo):
         j = 0
         draw.text(
             (600, 150),
-            "ELMORTAGEL PLAYING",
+            "Elmortagel Playing",
             fill="white",
             stroke_width=2,
             stroke_fill="white",
-            font=font,
+            font=font1,
         )
         for line in para:
             if j == 1:
