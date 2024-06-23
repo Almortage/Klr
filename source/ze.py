@@ -1,28 +1,27 @@
-import random
 from pyrogram import Client, filters
 from pyrogram import Client as app
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.enums import ChatMemberStatus, ChatMemberStatus
 
 
 
 @Client.on_message(filters.command(["زخرفه"], ""))
-async def zahrafa(c: Client, m: Message):
-    text_list = m.text.split(None, 1)
+async def zahrafa(client: Client, message):
+    text_list = message.text.split(None, 1)
     if len(text_list) < 2:
-        await m.reply_text("**◍خطأ حاول مرة أخرى\n\nأدخل `زخرفه المرتجل `√**", reply_to_message_id=m.id)
+        await message.reply_text("**◍خطأ حاول مرة أخرى\n\nأدخل `زخرفه المرتجل `√**", reply_to_message_id=message.id)
         return
     text = text_list[1].split(None, 1)[1] if len(text_list[1].split()) > 1 else text_list[1]
     if len(text) > 20:
-        await m.reply_text("**◍لا أستطيع إنشاء أكثر من شخصية واحدة، حاول مرة أخرى\n√**", reply_to_message_id=m.id)
+        await message.reply_text("**◍لا أستطيع إنشاء أكثر من شخصية واحدة، حاول مرة أخرى\n√**", reply_to_message_id=message.id)
         return
 
     # هنا يتم تنفيذ زخرفة النص
 
 
     else:
-        if re.match("\n", str(m.text)):
-            await m.reply_text("**◍لا أستطيع تزيين النص إذا كان من سطرين\n√**", reply_to_message_id=m.id)
+        if re.match("\n", str(message.text)):
+            await message.reply_text("**◍لا أستطيع تزيين النص إذا كان من سطرين\n√**", reply_to_message_id=message.id)
             return
     EmojeS = [
         ' 𓁻',
@@ -135,7 +134,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf = re.sub("z", "𝘇", zhrf)
     zhrf = re.sub("Z", "𝗭", zhrf)
 
-    zhrf2 = re.sub('ض', 'ضَٰـُـٰٓ', m.text)
+    zhrf2 = re.sub('ض', 'ضَٰـُـٰٓ', message.text)
     zhrf2 = re.sub('ص', 'صَٰـُـٰٓ', zhrf2)
     zhrf2 = re.sub('ث', 'ثَٰـُـٰٓ', zhrf2)
     zhrf2 = re.sub('ق', 'قَٰـُـٰٓ', zhrf2)
@@ -217,7 +216,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf2 = re.sub("z", "𝖟", zhrf2)
     zhrf2 = re.sub("Z", "𝖟", zhrf2)
 
-    zhrf3 = re.sub('ض', 'ض', m.text)
+    zhrf3 = re.sub('ض', 'ض', message.text)
     zhrf3 = re.sub('ص', 'ص', zhrf3)
     zhrf3 = re.sub('ث', 'ثہ', zhrf3)
     zhrf3 = re.sub('ق', 'ق', zhrf3)
@@ -304,7 +303,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf3 = re.sub('m', '𝐦', zhrf3)
     zhrf3 = re.sub('M', '𝐦', zhrf3)
 
-    zhrf4 = re.sub('ض', 'ضۜہٰٰ', m.text)
+    zhrf4 = re.sub('ض', 'ضۜہٰٰ', message.text)
     zhrf4 = re.sub('ص', 'ضۜہٰٰ', zhrf4)
     zhrf4 = re.sub('ث', 'ثہٰٰ', zhrf4)
     zhrf4 = re.sub('ق', 'قྀ̲ہٰٰ', zhrf4)
@@ -391,7 +390,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf4 = re.sub('m', '𝑴', zhrf4)
     zhrf4 = re.sub('M', '𝑴', zhrf4)
 
-    zhrf5 = re.sub('ض', 'ضَ', m.text)
+    zhrf5 = re.sub('ض', 'ضَ', message.text)
     zhrf5 = re.sub('ص', 'صً', zhrf5)
     zhrf5 = re.sub('ث', 'ثَ', zhrf5)
     zhrf5 = re.sub('ق', 'قُ', zhrf5)
@@ -478,7 +477,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf5 = re.sub('m', '𝒎', zhrf5)
     zhrf5 = re.sub('M', '𝒎', zhrf5)
 
-    zhrf6 = re.sub('ض', 'ﺿ̭͠', m.text)
+    zhrf6 = re.sub('ض', 'ﺿ̭͠', message.text)
     zhrf6 = re.sub('ص', 'ﺻ͡', zhrf6)
     zhrf6 = re.sub('ث', 'ﺜ̲', zhrf6)
     zhrf6 = re.sub('ق', 'ﭰ', zhrf6)
@@ -565,7 +564,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf6 = re.sub('m', 'ᴍ', zhrf6)
     zhrf6 = re.sub('M', 'ᴍ', zhrf6)
 
-    zhrf7 = re.sub('ض', 'ﺿ', m.text)
+    zhrf7 = re.sub('ض', 'ﺿ', message.text)
     zhrf7 = re.sub('ص', 'ﺻ', zhrf7)
     zhrf7 = re.sub('ث', 'ﭥ', zhrf7)
     zhrf7 = re.sub('ق', 'ﻗ̮ـ̃', zhrf7)
@@ -652,7 +651,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf7 = re.sub('m', '𝘔', zhrf7)
     zhrf7 = re.sub('M', '𝘔', zhrf7)
 
-    zhrf8 = re.sub('ض', 'ض', m.text)
+    zhrf8 = re.sub('ض', 'ض', message.text)
     zhrf8 = re.sub('ص', 'صہٰ', zhrf8)
     zhrf8 = re.sub('ث', 'ثہٰـ', zhrf8)
     zhrf8 = re.sub('ق', 'قہٰ', zhrf8)
@@ -739,7 +738,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf8 = re.sub('m', '𝙼', zhrf8)
     zhrf8 = re.sub('M', '𝙼', zhrf8)
 
-    zhrf9 = re.sub('ض', 'ض', m.text)
+    zhrf9 = re.sub('ض', 'ض', message.text)
     zhrf9 = re.sub('ص', 'ص', zhrf9)
     zhrf9 = re.sub('ث', 'ث', zhrf9)
     zhrf9 = re.sub('ق', 'قٌ', zhrf9)
@@ -826,15 +825,15 @@ async def zahrafa(c: Client, m: Message):
     zhrf9 = re.sub('m', '𝕄', zhrf9)
     zhrf9 = re.sub('M', '𝕄', zhrf9)
 
-    Text_Zhrfa = "♕ `" + zhrf + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf2 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf3 + random.choice(EmojeS) \
-                 + "•\n\n` " + zhrf4 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf5 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf6 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf7 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf8 + random.choice(Emoje) \
-                 + "`\n\n` " + zhrf9 + random.choice(Emoje) \
-                 + "`\n\n` " + zhrf5 + random.choice(Emoje)
+    Text_Zhrfa = "♕ `" + zhrf + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf2 + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf3 + randomessage.choice(EmojeS) \
+                 + "•\n\n` " + zhrf4 + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf5 + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf6 + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf7 + randomessage.choice(EmojeS) \
+                 + "`\n\n` " + zhrf8 + randomessage.choice(Emoje) \
+                 + "`\n\n` " + zhrf9 + randomessage.choice(Emoje) \
+                 + "`\n\n` " + zhrf5 + randomessage.choice(Emoje)
     Text_Zhrfa = Text_Zhrfa + "**\n\n المس سيتم نسخ الاسم \n│ \n👾**"
-    await m.reply_text(Text_Zhrfa, reply_to_message_id=m.id)
+    await message.reply_text(Text_Zhrfa, reply_to_message_id=message.id)
