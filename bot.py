@@ -16,6 +16,6 @@ async def start_bot():
     print("[INFO]: STARTING BOT CLIENT")
     await bot.start()
     A_q_lp = "Almortagel_12"
-    await bot.send_message(A_q_lp, "** اشتغلت . **")
+    await bot.send_message(A_q_lp, "** تم تشغيل البوت عزيزي المطور . **")
     print("[INFO]:   ")
     await idle()
