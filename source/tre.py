@@ -9,15 +9,6 @@ from pyrogramessage.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogramessage.enums import ChatMemberStatus
 
 
-def Who(message, user_id):
-  user = message.chat.get_member(user_id)
-  if user.status == ChatMemberStatus.OWNER:
-    return "المالك"
-  elif user.status == ChatMemberStatus.ADMINISTRATOR:
-    return "مشرف"
-  elif user.status == ChatMemberStatus.MEMBER:
-    return "العضو"
-
 forward = []
 cursing = []
 mute = []
