@@ -180,7 +180,7 @@ async def play(client: Client, message):
   message_id = message.id 
   gr = await get_group(bot_username)
   ch = await get_channel(bot_username)
-  button = [[InlineKeyboardButton(text="𓏺 َِ𝖤َِ𝗇َِ𝖣 .", callback_data=f"stop"), InlineKeyboardButton(text="𓏺 َِ𝖱َِ𝖾َِ𝖲َِ𝗎َِ𝖬َِ𝖾 .", callback_data=f"resume"), InlineKeyboardButton(text="𓏺 َِ𝖯َِ𝖺َِ𝖴َِ𝗌َِ𝖤 .", callback_data=f"pause")], [InlineKeyboardButton(text="𓏺 َِ𝗖َِ𝗵َِ𝗔َِ𝗻َِ𝗡َِ𝗲َِ𝗟 .", url=f"https://t.me/AlmortagelTech"), InlineKeyboardButton(text="𓏺 َِ𝗚َِ𝗿َِ𝗢َِ𝘂َِ𝗣 .", url=f"https://t.me/AlmortagelTech2")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url=f"https://t.me/Almortagel_12")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
+  button = [[InlineKeyboardButton(text="𝙴𝙽𝙳", callback_data=f"stop"), InlineKeyboardButton(text="𝚁𝙴𝚂𝚄𝙼𝙴", callback_data=f"resume"), InlineKeyboardButton(text="𝙿𝙰𝚄𝚂𝙴", callback_data=f"pause")], [InlineKeyboardButton(text="𓏺𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/AlmortagelTech"), InlineKeyboardButton(text="𓏺𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/AlmortagelTech2")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url=f"https://t.me/Almortagel_12")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
   if message.sender_chat:
      if not message.chat.type == ChatType.CHANNEL:
       return await message.reply_text("**يمكنك التشغيل بحسابك الخاص فقط.**")
