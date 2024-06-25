@@ -20,7 +20,7 @@ async def aii(client: Client, message):
    try:
     chat_id = message.chat.id
     bot_username = client.me.username
-    rep = await message.reply_text("**جاري تشغيل اغنية عشوائية لك انتظر قد يستغرق بعض القائق.**")
+    rep = await message.reply_text("**جاري تشغيل القرآن الكريم لك انتظر قد يستغرق بعض القائق.**")
     try:
           call = await get_call(bot_username)
     except:
@@ -33,7 +33,7 @@ async def aii(client: Client, message):
     user = await get_userbot(bot_username)
     req = message.from_user.mention if message.from_user else message.chat.title
     raw_list = []
-    async for msg in user.get_chat_history("telawatnader"):
+    async for msg in user.get_chat_history("EIEI06"):
         if msg.audio:
           raw_list.append(msg)
     x = random.choice(raw_list)
