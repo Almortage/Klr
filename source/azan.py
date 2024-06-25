@@ -1,7 +1,3 @@
-#الكود دا بلحب محتاج بس ناس تدع انا و ايرور نعدي السنه دي علي خير
-#يوزري @PTPPE
-#يزور البولبول @E_Z_9
-#يوزر ايرور @N_Z_8
 import asyncio
 from pyrogram import filters
 from pyrogram.errors import FloodWait
