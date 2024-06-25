@@ -251,7 +251,7 @@ async def play(client: Client, message):
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
-         await message.reply_photo(photo=photo, caption=f"**Add Track To Playlist : {position} .\n\n𓏺 َِ𝖲َِ𝗈َِ𝖭َِ𝗀 َِ𝖭َِ𝖺َِ𝖬َِ𝖾 . : {title[:18]} .\n𓏺 َِ𝖣َِ𝗎َِ𝖱َِ𝖺َِ𝖳َِ𝗂َِ𝖮َِ𝗇 َِ𝖳َِ𝗂َِ𝖬َِ𝖾 . : {duration} .\n𓏺 َِ𝖱َِ𝖾َِ𝖰َِ𝗎َِ𝖤َِ𝗌َِ𝖳 َِ𝖡َِ𝗒 . : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
+         await message.reply_photo(photo=photo, caption=f"**Add Track To Playlist : {position} .\n\n𓏺Song Name : {title[:18]} .\nDuration Time: {duration} .\nRequest By : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
          await logs(bot_username, client, message)
      else:
          chat_id = message.chat.id
@@ -287,14 +287,14 @@ async def play(client: Client, message):
           ahmedphoto = ahmed.photo.big_file_id
           photo = await client.download_media(ahmedphoto)
          photo = await gen_thumb(videoid, photo)
-         await message.reply_photo(photo=photo, caption=f"**𓏺 َِ𝖲َِ𝗍َِ𝖠َِ𝗋َِ𝖳َِ𝗅َِ𝖨َِ𝗇َِ𝖦 َِ𝖯َِ𝗅َِ𝖠َِ𝗒َِ𝖨َِ𝗇َِ𝖦 َِ𝖭َِ𝗈َِ𝖶 ..\n\n𓏺 َِ𝖲َِ𝗈َِ𝖭َِ𝗀 َِ𝖭َِ𝖺َِ𝖬َِ𝖾 . : {title[:18]} .\n𓏺 َِ𝖣َِ𝗎َِ𝖱َِ𝖺َِ𝖳َِ𝗂َِ𝖮َِ𝗇 َِ𝖳َِ𝗂َِ𝖬َِ𝖾 . : {duration} .\n𓏺 َِ𝖱َِ𝖾َِ𝖰َِ𝗎َِ𝖤َِ𝗌َِ𝖳 َِ𝖡َِ𝗒 . : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
+         await message.reply_photo(photo=photo, caption=f"**Starting Playing Now\n\n𓏺Song Name : {title[:18]} .\nDuration Time: {duration} .\nRequest By : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
          await logs(bot_username, client, message)
      await rep.delete()
   else:
        if not message.reply_to_message.media:
          return
        rep = await message.reply_text("**جاري تشغيل الملف انتظر قليلا 🚦 .**") 
-       photo = "Uploaded to https://telegra.ph/file/562324befcafe035436dc.jpg"
+       photo = "Uploaded to https://telegra.ph/file/aa1a0200f9a542cda3a5c.jpg"
        if message.reply_to_message.video or message.reply_to_message.document:
            vid = True
        else:
@@ -320,7 +320,7 @@ async def play(client: Client, message):
          chatname = f"[{message.chat.title}](https://t.me/{message.chat.username})" if message.chat.username else f"{message.chat.title}"
          chatname = f"{message.author_signature}" if message.author_signature else chatname
          requester = chatname if alexa.views else f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-         await message.reply_photo(photo=photo, caption=f"**Add Track To Playlist : {position} .\n\n𓏺 َِ𝖲َِ𝗈َِ𝖭َِ𝗀 َِ𝖭َِ𝖺َِ𝖬َِ𝖾 . : {title} .\n𓏺 َِ𝖣َِ𝗎َِ𝖱َِ𝖺َِ𝖳َِ𝗂َِ𝖮َِ𝗇 َِ𝖳َِ𝗂َِ𝖬َِ𝖾 . : {duration} .\n𓏺 َِ𝖱َِ𝖾َِ𝖰َِ𝗎َِ𝖤َِ𝗌َِ𝖳 َِ𝖡َِ𝗒 . : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
+         await message.reply_photo(photo=photo, caption=f"**Add Track To Playlist : {position} .\n\n𓏺Song Name : {title} .\nDuration Time: {duration} .\nRequest By : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
          await logs(bot_username, client, message)
        else:
          chat_id = message.chat.id
@@ -337,7 +337,7 @@ async def play(client: Client, message):
          chatname = f"[{message.chat.title}](https://t.me/{message.chat.username})" if message.chat.username else f"{message.chat.title}"
          chatname = f"{message.author_signature}" if message.author_signature else chatname
          requester = chatname if alexa.views else f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-         await message.reply_photo(photo=photo, caption=f"**𓏺 َِ𝖲َِ𝗍َِ𝖠َِ𝗋َِ𝖳َِ𝗅َِ𝖨َِ𝗇َِ𝖦 َِ𝖯َِ𝗅َِ𝖠َِ𝗒َِ𝖨َِ𝗇َِ𝖦 َِ𝖭َِ𝗈َِ𝖶 ..\n\n𓏺 َِ𝖲َِ𝗈َِ𝖭َِ𝗀 َِ𝖭َِ𝖺َِ𝖬َِ𝖾 . : {title} .\n𓏺 َِ𝖣َِ𝗎َِ𝖱َِ𝖺َِ𝖳َِ𝗂َِ𝖮َِ𝗇 َِ𝖳َِ𝗂َِ𝖬َِ𝖾 . : {duration} .\n𓏺 َِ𝖱َِ𝖾َِ𝖰َِ𝗎َِ𝖤َِ𝗌َِ𝖳 َِ𝖡َِ𝗒 . : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
+         await message.reply_photo(photo=photo, caption=f"**Starting Playing Now\n\nSong Name : {title} .\nDuration Time : {duration} .\nRequest By : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
          await logs(bot_username, client, message)
   try:
      os.remove(file_path)
