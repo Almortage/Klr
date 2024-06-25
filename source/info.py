@@ -444,7 +444,7 @@ async def change_stream(bot_username, client, chat_id):
             requester = userx.mention
             gr = await get_group(bot_username)
             ch = await get_channel(bot_username)
-            button = [[InlineKeyboardButton(text="⸢ 𝙀𝙉𝘿 ⸥", callback_data=f"stop"), InlineKeyboardButton(text="⸢ 𝙍𝙀𝙎𝙐𝙈𝙀 ⸥", callback_data=f"resume"), InlineKeyboardButton(text="⸢ 𝙋𝘼𝙐𝙎𝙀 ⸥", callback_data=f"pause")], [InlineKeyboardButton(text="ᥴ𝗁ᥲ️ꪀꪀᥱᥣ", url=f"{ch}"), InlineKeyboardButton(text="ᘜᖇ᥆υρ", url=f"{gr}")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url="https://t.me/{OWNER[0]}")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
+            button = [[InlineKeyboardButton(text="𝙴𝙽𝙳", callback_data=f"stop"), InlineKeyboardButton(text="𝚁𝙴𝚂𝚄𝙼𝙴", callback_data=f"resume"), InlineKeyboardButton(text="𝙿𝙰𝚄𝚂𝙴", callback_data=f"pause")], [InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"{ch}"), InlineKeyboardButton(text="𝙶𝚁𝙾𝚄𝙿", url=f"{gr}")], [InlineKeyboardButton(text=f"{OWNER_NAME}", url="https://t.me/{OWNER[0]}")], [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡", url=f"https://t.me/{bot_username}?startgroup=True")]]
             await app.send_photo(chat_id, photo=img, caption=f"**Starting Streaming .\n\nSong Name : {title} .\nDuration Time : {dur} .\nRequest By : {requester} .**", reply_markup=InlineKeyboardMarkup(button))
             try:
                os.remove(file_path)
