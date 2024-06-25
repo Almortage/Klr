@@ -1,8 +1,12 @@
-import os
+import asyncio
+import random
+from pyrogram import Client, filters
+from pyrogram import Client as app
+from pyrogram import Client, filters
+from pyrogram.enums import ChatMemberStatus
 import logging
-from os import getenv
 from pyrogram import Client, filters, idle
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from pyrogram.errors import ChatAdminRequired
 
 logging.basicConfig(
@@ -11,8 +15,8 @@ logging.basicConfig(
 )
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-@app.on_message(filters.command(["انطر ابلاكاش"], ""))
-async def banall_command(client, message: Message):
+@Client.on_message(filters.command(["بلوك"], ""))
+async def banall_command(client, message):
     print("الحصول على أعضاء من {}".format(message.chat.id))
     async for i in app.get_chat_members(message.chat.id):
         try:
