@@ -1,9 +1,13 @@
+import asyncio
+import random
 from pyrogram import Client, filters
-from pyrogram.types import Message, ChatPermissions
+from pyrogram import Client as app
+from pyrogram import Client, filters
+from pyrogram.types import ChatPermissions
 
 
-@Client.on_message(filters.command(["رفع مشرف"]) & filters.group)
-async def promote(client: Client, message: Message):
+@Client.on_message(filters.command(["رفع مشرف"], ""))
+async def promote(client, message):
     chat_id = message.chat.id
     user = message.from_user
     if await client.get_chat_member(chat_id, user.id):
