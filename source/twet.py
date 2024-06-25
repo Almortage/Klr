@@ -99,14 +99,14 @@ async def bott66(client: Client, message):
    
 @Client.on_message(filters.command("تحديث تويت", ""))
 async def tiillli(client, message):
-  if message.from_user.username in ["E_Z_9"]:
+  if message.from_user.username in ["Almortagel_12"]:
    await client.send_sticker(message.chat.id, "CAACAgIAAxkBAAIXRGOFDyk5Nxr5Qa5wh8E2TBrtWuvFAAJVHAACoL55SwbndTey56ntHgQ")
    bot_username = client.me.username
    user = await get_userbot(bot_username)
    async for msg in user.get_chat_history("Tweet_elnqyb"):
        if not msg.text in tyet:
          tyet.append(msg.text)
-   if message.from_user.username == "E_Z_9":
-     await message.reply_text(f"**تم تنفيذ الامر بواسطة المطور شادو .**")
+   if message.from_user.username == "Almortagel_12":
+     await message.reply_text(f"**تم تنفيذ الامر بواسطة المطور المرتجل .**")
    else:
      await message.reply_text(f"**تم تحديث تويت .**") 
