@@ -123,7 +123,7 @@ async def welcome(client: Client, message):
    try:
     bot = client.me
     bot_username = bot.username
-    if message.new_chat_members[0].username == "Almortagel_12":
+    if message.new_chat_members[0].username == "A_q_lp":
       try:
          chat_id = message.chat.id
          user_id = message.new_chat_members[0].id
@@ -131,7 +131,7 @@ async def welcome(client: Client, message):
          await client.set_administrator_title(chat_id, user_id, "المرتجل")
       except:
         pass
-      return await message.reply_text(f"**انضم المطور المرتجل للشات .\nمرحبا بك : @Almortagel_12 .**")
+      return await message.reply_text(f"**♪ انضم المطور المرتجل للشات  💎 .\n♪ مرحبا بك : @A_q_lp  💎 .**")
     dev = await get_dev(bot_username)
     if message.new_chat_members[0].id == dev:
       try:
