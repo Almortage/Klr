@@ -3,6 +3,11 @@ from pyrogram import Client as app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.enums import ChatMemberStatus, ChatMemberStatus
 
+@Client.on_message(filters.command(["اسمي", "اسمي اي"], "")& filters.group)
+async def vgdg(client: Client, message):
+    await message.reply_text(
+        f"""❤️‍🔥 اسمك »»  {message.from_user.mention()}""") 
+
 
 iddof = []
 @Client.on_message(filters.command(["تعطيل الايدي", "قفل الايدي"], "")& filters.group)
