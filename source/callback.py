@@ -16,7 +16,7 @@ async def arbic(client: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup([
 [InlineKeyboardButton("صاحب السورس 🧑‍✈️", url=f"https://t.me/Almortagel_12")],
 [InlineKeyboardButton("طريقة التشغيل 🧠", callback_data="bcmds"),InlineKeyboardButton("طريقة التفعيل 🦸", callback_data="bhowtouse")],
-[InlineKeyboardButton("جروب البوت 🤖", url=f"https://t.me/R3_QX"),InlineKeyboardButton("قناه التحديثات 🐉", url=f"https://t.me/R7_QX")],
+[InlineKeyboardButton("جروب البوت 🤖", url=f"https://t.me/AlmortagelTech2"),InlineKeyboardButton("قناه التحديثات 🐉", url=f"https://t.me/AlmortagelTech")],
 [InlineKeyboardButton(f"{devname}", user_id=f"{dev}")],
 [InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك ⚡",url=f"https://t.me/{bot.username}?startgroup=true")],]),disable_web_page_preview=True)
 
@@ -38,7 +38,7 @@ async def english(client: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup([
 [InlineKeyboardButton("The owner of the source 🧑‍✈️", url=f"https://t.me/Almortagel_12")],
 [InlineKeyboardButton("Operation method 🧠", callback_data="cbcmds"),InlineKeyboardButton("Activation method 🦸", callback_data="cbhowtouse")],
-[InlineKeyboardButton("Bot Group 🤖", url=f"https://t.me/R3_QX"),InlineKeyboardButton("Channel Updates 🐉", url=f"https://t.me/R7_QX")],
+[InlineKeyboardButton("Bot Group 🤖", url=f"https://t.me/AlmortagelTech2"),InlineKeyboardButton("Channel Updates 🐉", url=f"https://t.me/AlmortagelTech")],
 [InlineKeyboardButton(f"{devname}", user_id=f"{dev}")],
 [InlineKeyboardButton("Add the bot to your group or channel ⚡",url=f"https://t.me/{bot.username}?startgroup=true")],]),disable_web_page_preview=True)
 
@@ -55,7 +55,7 @@ async def cbguides(_, query: CallbackQuery):
 4.) ᴛụʀɴ ᴏɴ ᴛʜᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ғɪʀѕᴛ ʙᴇғᴏʀᴇ ѕᴛᴀʀᴛ ᴛᴏ ᴘʟᴀʏ ᴠɪᴅᴇᴏ/ᴍụѕɪᴄ.
 5.) ѕᴏᴍᴇᴛɪᴍᴇѕ, ʀᴇʟᴏᴀᴅɪɴɢ ᴛʜᴇ ʙᴏᴛ ʙʏ ụѕɪɴɢ /ʀᴇʟᴏᴀᴅ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʜᴇʟᴘ ʏᴏụ ᴛᴏ ғɪх ѕᴏᴍᴇ ᴘʀᴏʙʟᴇᴍ.
 📌 ɪғ ᴛʜᴇ ụѕᴇʀʙᴏᴛ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ, ᴍᴀᴋᴇ ѕụʀᴇ ɪғ ᴛʜᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴀʟʀᴇᴀᴅʏ ᴛụʀɴᴇᴅ ᴏɴ.
-💡 ɪғ ʏᴏụ ʜᴀᴠᴇ ᴀ ғᴏʟʟᴏᴡ-ụᴘ ǫụᴇѕᴛɪᴏɴѕ ᴀʙᴏụᴛ ᴛʜɪѕ ʙᴏᴛ, ʏᴏụ ᴄᴀɴ ᴛᴇʟʟ ɪᴛ ᴏɴ ᴍʏ ѕụᴘᴘᴏʀᴛ ᴄʜᴀᴛ ʜᴇʀᴇ: @R3_QX
+💡 ɪғ ʏᴏụ ʜᴀᴠᴇ ᴀ ғᴏʟʟᴏᴡ-ụᴘ ǫụᴇѕᴛɪᴏɴѕ ᴀʙᴏụᴛ ᴛʜɪѕ ʙᴏᴛ, ʏᴏụ ᴄᴀɴ ᴛᴇʟʟ ɪᴛ ᴏɴ ᴍʏ ѕụᴘᴘᴏʀᴛ ᴄʜᴀᴛ ʜᴇʀᴇ: @AlmortagelTech2
 ⋮ __ ᴅᴇᴠᴇʟᴏᴘᴇʀ ʙʏ [{OWNER_NAME}]""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ɢᴏ ʙᴀᴄᴋ", callback_data="english")]]
